@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MiPrimerProyectov15';
+
+  rutas:string[]=['piedra-papel-tijera', 'lista-personajes', 'semaforo', 'puebra-material']
+
+  constructor(private router: Router){
+
+  }
+
+
+  cambiaRuta(){
+    let numAleatorio = Math.floor(Math.random()*this.rutas.length)
+    this.router.navigate([this.rutas[numAleatorio]]);
+  }
 }

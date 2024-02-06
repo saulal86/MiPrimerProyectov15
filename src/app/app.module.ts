@@ -14,6 +14,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { PptComponent } from './ppt/ppt.component';
+import { LandindPageComponent } from './landind-page/landind-page.component';
+import { Page404Component } from './page404/page404.component';
 
 
 
@@ -25,7 +27,9 @@ import { PptComponent } from './ppt/ppt.component';
     SemaforoComponent,
     ListaComponent,
     PruebaMaterialComponent,
-    PptComponent
+    PptComponent,
+    LandindPageComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,
