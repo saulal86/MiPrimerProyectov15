@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'MiPrimerProyectov15';
+  nombreDeUsuario:string = "soraya";
 
   rutas:string[]=['piedra-papel-tijera', 'lista-personajes', 'semaforo', 'puebra-material']
 

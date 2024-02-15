@@ -1,0 +1,38 @@
+.contenedor-personaje{
+    background-color: rgb(198, 166, 100);
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    -webkit-box-shadow: 25px 22px 37px 0px rgba(87,87,13,1);
+    -moz-box-shadow: 25px 22px 37px 0px rgba(87,87,13,1);
+    box-shadow: 25px 22px 37px 0px rgba(87,87,13,1);
+}
+.contenedor-personaje:hover{
+    background-color: goldenrod;
+    flex: left;
+}
+.contenedor-componente{
+    float: left;
+    margin: 30px;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    border: black solid;
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    font-family: Papyrus;
+    font-size: small;
+    font-weight: 900px;
+    margin-left: 50px;
+}
+.datos-basicos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

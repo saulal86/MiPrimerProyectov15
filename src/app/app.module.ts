@@ -16,6 +16,9 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { PptComponent } from './ppt/ppt.component';
 import { LandindPageComponent } from './landind-page/landind-page.component';
 import { Page404Component } from './page404/page404.component';
+import { ListaTarjetasComponent } from './lista-tarjetas/lista-tarjetas.component';
+import { TarjetaComponent } from './tarjeta/tarjeta.component';
+import { TrunioComponent } from './trunio/trunio.component';
 
 
 
@@ -29,7 +32,10 @@ import { Page404Component } from './page404/page404.component';
     PruebaMaterialComponent,
     PptComponent,
     LandindPageComponent,
-    Page404Component
+    Page404Component,
+    ListaTarjetasComponent,
+    TarjetaComponent,
+    TrunioComponent
   ],
   imports: [
     BrowserModule,

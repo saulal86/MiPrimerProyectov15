@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-ppt',
@@ -10,11 +11,21 @@ export class PptComponent implements OnInit{
   texto:String="";
   texto2:String="";
   texto3:String="";
+  nombre:string=""
 
   elecciones:string[]=["piedra", "papel", "tijeras"]
 
+  constructor(private route:ActivatedRoute){
+
+  }
+
   ngOnInit(): void {
-    this.texto="Hola, bienvenido a piedra, papel o tijera realiza tu elección."
+    this.route.params.subscribe(
+      params => {
+        this.nombre = params['nick']
+      }
+    )
+    this.texto="Hola, bienvenido/a "+ this.nombre+" a piedra, papel o tijera realiza tu elección."
   }
 
   elegir(eleccion:String){
