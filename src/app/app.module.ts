@@ -48,6 +48,7 @@ import { TrunioComponent } from './trunio/trunio.component';
     MatTabsModule,
     MatProgressBarModule
   ],
+  exports: [ListaComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
